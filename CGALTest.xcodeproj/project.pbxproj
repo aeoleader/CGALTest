@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		47807E991DC9891E00872E22 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47807E981DC9891E00872E22 /* main.cpp */; };
+		47807EA51DC9A22900872E22 /* libboost_thread-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47807EA01DC9A22900872E22 /* libboost_thread-mt.dylib */; };
+		47807EA61DC9A22900872E22 /* libCGAL_Core.12.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47807EA11DC9A22900872E22 /* libCGAL_Core.12.0.0.dylib */; };
+		47807EA71DC9A22900872E22 /* libCGAL.12.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47807EA21DC9A22900872E22 /* libCGAL.12.0.0.dylib */; };
+		47807EA81DC9A22900872E22 /* libgmp.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47807EA31DC9A22900872E22 /* libgmp.10.dylib */; };
+		47807EA91DC9A22900872E22 /* libmpfr.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47807EA41DC9A22900872E22 /* libmpfr.4.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,12 @@
 /* Begin PBXFileReference section */
 		47807E951DC9891E00872E22 /* CGALTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CGALTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47807E981DC9891E00872E22 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		47807EA01DC9A22900872E22 /* libboost_thread-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_thread-mt.dylib"; path = "../../../../../usr/local/Cellar/boost/1.62.0/lib/libboost_thread-mt.dylib"; sourceTree = "<group>"; };
+		47807EA11DC9A22900872E22 /* libCGAL_Core.12.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libCGAL_Core.12.0.0.dylib; path = ../../../../../usr/local/Cellar/cgal/4.9/lib/libCGAL_Core.12.0.0.dylib; sourceTree = "<group>"; };
+		47807EA21DC9A22900872E22 /* libCGAL.12.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libCGAL.12.0.0.dylib; path = ../../../../../usr/local/Cellar/cgal/4.9/lib/libCGAL.12.0.0.dylib; sourceTree = "<group>"; };
+		47807EA31DC9A22900872E22 /* libgmp.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgmp.10.dylib; path = ../../../../../usr/local/Cellar/gmp/6.1.1/lib/libgmp.10.dylib; sourceTree = "<group>"; };
+		47807EA41DC9A22900872E22 /* libmpfr.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmpfr.4.dylib; path = ../../../../../usr/local/Cellar/mpfr/3.1.5/lib/libmpfr.4.dylib; sourceTree = "<group>"; };
+		47DFC6611DC9BC8E00B3881F /* test_data.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_data.in; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +43,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47807EA51DC9A22900872E22 /* libboost_thread-mt.dylib in Frameworks */,
+				47807EA61DC9A22900872E22 /* libCGAL_Core.12.0.0.dylib in Frameworks */,
+				47807EA71DC9A22900872E22 /* libCGAL.12.0.0.dylib in Frameworks */,
+				47807EA81DC9A22900872E22 /* libgmp.10.dylib in Frameworks */,
+				47807EA91DC9A22900872E22 /* libmpfr.4.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +57,10 @@
 		47807E8C1DC9891E00872E22 = {
 			isa = PBXGroup;
 			children = (
+				47DFC6611DC9BC8E00B3881F /* test_data.in */,
 				47807E971DC9891E00872E22 /* CGALTest */,
 				47807E961DC9891E00872E22 /* Products */,
+				47807E9F1DC9A22900872E22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +78,18 @@
 				47807E981DC9891E00872E22 /* main.cpp */,
 			);
 			path = CGALTest;
+			sourceTree = "<group>";
+		};
+		47807E9F1DC9A22900872E22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47807EA01DC9A22900872E22 /* libboost_thread-mt.dylib */,
+				47807EA11DC9A22900872E22 /* libCGAL_Core.12.0.0.dylib */,
+				47807EA21DC9A22900872E22 /* libCGAL.12.0.0.dylib */,
+				47807EA31DC9A22900872E22 /* libgmp.10.dylib */,
+				47807EA41DC9A22900872E22 /* libmpfr.4.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,14 +246,34 @@
 		47807E9D1DC9891E00872E22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/boost/1.62.0/lib,
+					/usr/local/Cellar/cgal/4.9/lib,
+					/usr/local/Cellar/gmp/6.1.1/lib,
+					/usr/local/Cellar/mpfr/3.1.5/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /usr/local/include;
 			};
 			name = Debug;
 		};
 		47807E9E1DC9891E00872E22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/boost/1.62.0/lib,
+					/usr/local/Cellar/cgal/4.9/lib,
+					/usr/local/Cellar/gmp/6.1.1/lib,
+					/usr/local/Cellar/mpfr/3.1.5/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /usr/local/include;
 			};
 			name = Release;
 		};
@@ -246,6 +296,7 @@
 				47807E9E1DC9891E00872E22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
